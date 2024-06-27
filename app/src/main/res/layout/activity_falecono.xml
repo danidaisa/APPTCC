@@ -9,7 +9,7 @@
     android:backgroundTintMode="src_atop"
     android:foregroundTint="#527A0B"
     android:visibility="visible"
-    tools:context=".MainActivity"
+    tools:context=".falecono"
     tools:visibility="visible">
 
     <TextView
@@ -41,6 +41,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -87,13 +88,13 @@
         android:layout_marginStart="144dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="170dp"
-        android:layout_marginBottom="180dp"
+        android:layout_marginBottom="70dp"
         android:backgroundTint="#287146"
-        android:onClick="activity_confirmafaleconosco.xml"
+        android:onClick="activity_confirmfaleconosco.xml"
         android:text="Enviar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2"
         app:layout_constraintVertical_bias="0.0" />
@@ -163,13 +164,13 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.047" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="80dp"
         android:layout_height="84dp"
-        android:layout_marginStart="120dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="5dp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
@@ -177,5 +178,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:srcCompat="@drawable/tele" />
+
+    <Button
+        android:id="@+id/backmenu"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="activity_menu.xml"
+        android:text="MENU"
+        app:iconTint="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/LIMPAR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_confirma"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/LIMPAR"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="20dp"
+        android:text="LIMPAR"
+        app:iconTint="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backmenu"
+        app:layout_constraintTop_toBottomOf="@+id/btn_confirma"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
